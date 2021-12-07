@@ -45,8 +45,12 @@ with open("input") as file:
         ll = ll.rstrip()
         ll = ll.split(",")
         
+# consider using np.unique for counting unique elements
 ages = np.array(ll).astype(int)
-histAges, histDays = np.histogram(ages,bins=np.arange(11)) # 9 elements!
+
+# bins == 9(0-8) + 1(edges) + 1(extra bin)
+histAges, histDays = np.histogram(ages,bins=np.arange(11)) 
+# histDays are bin_edges!!! That's why len(histDays) == len(histAges) + 1
 
 for d in range(ndays):
     addTo6 = histAges[0]
