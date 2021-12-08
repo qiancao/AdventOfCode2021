@@ -17,12 +17,12 @@ hpos = np.array(ll).astype(int)
 
 #%% Part I
 targetpos = np.arange(np.max(hpos)+1)
-
 fuel = np.sum(np.abs(hpos[:,None]-targetpos[None,:]),axis=0)
 print(np.min(fuel))
 
-#%% Part II
+# Note: the minimizer of sum(abs(...)) is the MEDIAN
 
+#%% Part II
 def fuelfunc(x):
     dist = np.abs(x)
     return dist*(dist+1)/2
