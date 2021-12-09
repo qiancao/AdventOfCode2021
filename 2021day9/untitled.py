@@ -45,7 +45,8 @@ while (True):
     
     if total_size == total_size_new:
         break
-    
+
+# TODO: write connected-components, oh well
 cc, ncomponents = label(hl)
 
 lencc = []
