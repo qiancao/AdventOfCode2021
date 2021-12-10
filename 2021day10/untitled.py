@@ -33,6 +33,7 @@ wrongChar = []
 stack = []
 for line in nav:
     for ind, char in enumerate(line):
+        # a better way to write this is char in '([{<'
         if (char == '(') or (char == '[') or (char == '{') or (char == '<'):
             stack.append(char)
         elif char == ")" or char == ']' or char == '}'  or (char == '>'):
