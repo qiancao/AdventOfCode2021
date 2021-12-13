@@ -94,7 +94,7 @@ while (True):
         if currentVertex == "end":
             Npaths += 1
             # print("Complete path found: "+" -> ".join(path))
-        if len(stack) == 0: # what a weird place to break the loop!! the problem is stackBacktrackPtr[-1] which can't be empty
+        if len(stack) == 0: # what a weird place to break the loop!! Very 12-monkey-esque (The TV show). The problem is stackBacktrackPtr[-1] which can't be empty
             break
         pathBacktrackInd = stackBacktrackPtr[-1]+1 # End of path requires backtracking of path
         path = path[:pathBacktrackInd]
