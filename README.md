@@ -1,8 +1,5 @@
 # AdventOfCode
 
-On OOP:
-- https://blog.finxter.com/python-one-line-class/
-
 On names and scoping:
 - https://stackoverflow.com/questions/11585793/are-numpy-arrays-passed-by-reference
 - https://nedbatchelder.com/text/names1.html (Ned Batchelder - Facts and Myths about Python names and values - PyCon 2015)
