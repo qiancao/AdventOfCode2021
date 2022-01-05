@@ -10,12 +10,12 @@ e0 = list(np.loadtxt("test", dtype = str))
 e0 = np.array([[char for char in erow] for erow in e0]).astype(int)
 
 with open("test") as file:
-    for l, ll in enumerate(file):
+    for ind, line in enumerate(file):
         ll = ll.rstrip()
-        ll = ll.split("|")
+        ll = ll.split(",")
 
         
-#%% Part II
+#%% Part I
 
 print()
 
